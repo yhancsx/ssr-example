@@ -24,7 +24,7 @@ $ yarn eject
 ### [2. ssr](https://github.com/yhancsx/ssr-example/tree/ssr)
 server-side rendering을 위한 wepback 및 loadable component 설정입니다.
 
-- client 측 webpack build 분리 (node, web)
+- client 측 webpack config 수정 (lodable plugin, filename)
 - server 측 entry point, webpack 및 build 코드 작성
 - index.js에 loadableReady 및 hydrate 적용
 
@@ -37,3 +37,10 @@ $ yarn build
 $ yarn build:server
 $ yarn start:server
 ```
+
+### Referenes
+- https://loadable-components.com/docs/server-side-rendering/
+- https://medium.com/@minoo/react-typescript-ssr-code-splitting-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-d8cec9567871
+- https://medium.com/@minoo/next-js-%EC%B2%98%EB%9F%BC-server-side-rendering-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-7608e82a0ab1
+- https://blog.songc.io/react/react-ssr/
+- https://github.com/SoYoung210/react-ssr-code-splitting
