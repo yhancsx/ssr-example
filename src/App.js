@@ -1,10 +1,12 @@
+import loadable from '@loadable/component';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
 import Footer from './components/Footer';
-import News from './pages/News';
-import Home from './pages/Home';
+import Header from './components/Header';
+
+const Home = loadable(() => import('./pages/Home'), {ssr: false})
+const News = loadable(() => import('./pages/News'))
 
 function App() {
   return (
